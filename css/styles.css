@@ -1,0 +1,59 @@
+body
+{
+    background-image: url('../images/bacon.webp');
+}
+
+h1
+{
+    font-size: 100px;
+    animation-name: slidein;
+    animation-duration: 3s;
+}
+
+p
+{
+    animation-duration: 2s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+}
+
+img
+{
+    size: 500px;
+    animation-name: rotate2;
+    animation-iteration-count: infinite;
+    animation-duration: 7s;
+}
+
+@keyframes slidein
+{
+    from {
+    transform:translateY(-500%)
+    }
+
+    to {
+    transform:translateY(0%)
+    }
+}
+
+@keyframes rotate
+{
+    from {
+    transform:rotate(0)
+    }
+
+    to {
+    transform:rotate(360deg)
+    }
+}
+
+@keyframes rotate2
+{
+    from {
+    transform:rotate(0)
+    }
+
+    to {
+    transform:rotate(-360deg)
+    }
+}
