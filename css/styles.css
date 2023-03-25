@@ -1,6 +1,9 @@
 body
 {
     background-image: url('../images/bacon.webp');
+    cursor: url('../images/bacon.png'), auto;
+    text-align: center;
+    
 }
 
 h1
@@ -8,6 +11,22 @@ h1
     font-size: 100px;
     animation-name: slidein;
     animation-duration: 3s;
+}
+
+
+h1:hover
+{
+    color: red;
+}
+
+h1:hover::after
+{
+    content: "Eat Eat Eat!";
+}
+
+h1::after
+{
+    content: "I Love Bacon";
 }
 
 p
